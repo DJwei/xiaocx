@@ -1,75 +1,80 @@
- <view class="indexContainer">
-   <!--轮播区域-->
+<view class="indexContainer">
+  <!--轮播区域-->
 
-     <swiper class="banner" indicator-dots  indicator-color="ivory" indicator-active-color="#d50f33"  >
-      <swiper-item>
-         <image src="/images/picture.JPG"></image>
-      </swiper-item>
-      <swiper-item>
-         <image src="/images/picture.JPG"></image>
-      </swiper-item>
-      <swiper-item>
-         <image src="/images/picture.JPG"></image>
-      </swiper-item>
+  <swiper class="banner" indicator-dots indicator-color="ivory" indicator-active-color="#d50f33">
+    <swiper-item>
+      <image src="/images/picture.JPG"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/picture.JPG"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/picture.JPG"></image>
+    </swiper-item>
 
 
-     </swiper>
+  </swiper>
   <!--五个图标导航区域-->
-   <view class="navContainer">
-       <view class="navItem">
-        <text class="iconfont icon-tuijian"></text>
-        <text>每日推荐</text>
-       </view>
-        <view class="navItem">
-       <text class="iconfont icon-gedan"></text>
-        <text>歌单</text>
-       </view>
-        <view class="navItem">
-        <text class="iconfont icon-paihangbang"></text>
-        <text>排行榜</text>
-       </view>
-        <view class="navItem">
-       <text class="iconfont icon-diantaizhibo"></text>
-        <text>电台</text>
-       </view>
-        <view class="navItem">
-       <text class="iconfont icon-zhibo"></text>
-        <text>直播</text>
-       </view>
-   </view>
-   <!--推荐歌曲区域-->
-   <view class="recommendContainer">
-     <view class="header">
-       <text class="title">推荐歌曲</text>
-       <view>
-         <text>为你精心推荐</text>
-         <text class="more">查看跟多</text>
-       </view>
-     </view>
-
-
-     <!--内容区域-->
-     <scroll-view class="recommendScroll" enable-flex scroll-x>
-        <view class="scrollItem">
-          <image src="/images/game pic.jpg"></image>
-          <text>游戏玩家|必备carry1全场</text>
-       </view>
-        <view class="scrollItem">
-          <image src="/images/dianyin pic.jpg"></image>
-          <text>电音狂欢节|欧美电音狂欢，节奏摇摆，即刻放飞自我</text>
-       </view>
-        <view class="scrollItem">
-          <image src="/images/gufen pic.jpg"></image>
-          <text>每日古风伤感犹存，一起感受一下古代的歌曲</text>
-       </view>
-        <view class="scrollItem">
-          <image src="/images/DJ pic.jpg"></image>
-          <text>下班回家的路上放一首车载DJ，毫无疲惫感</text>
-       </view>
-        <view class="scrollItem">
-          <image src="/images/discourage pic.jpg"></image>
-          <text>伤感人的话|世界这么大，你不想去看看嘛？别再伤感</text>
-       </view>
-     </scroll-view>
-   </view>
- </view>
+  <view class="navContainer">
+    <view class="navItem">
+      <text class="iconfont icon-tuijian"></text>
+      <text>每日推荐</text>
+    </view>
+    <view class="navItem">
+      <text class="iconfont icon-gedan"></text>
+      <text>歌单</text>
+    </view>
+    <view class="navItem">
+      <text class="iconfont icon-paihangbang"></text>
+      <text>排行榜</text>
+    </view>
+    <view class="navItem">
+      <text class="iconfont icon-diantaizhibo"></text>
+      <text>电台</text>
+    </view>
+    <view class="navItem">
+      <text class="iconfont icon-zhibo"></text>
+      <text>直播</text>
+    </view>
+  </view>
+  <!--推荐歌曲区域-->
+  <!-- <view class="recommendContainer">
+    <view class="header">
+      <text class="title">推荐歌曲</text>
+      <view>
+        <text>为你精心推荐</text>
+        <text class="more">查看跟多</text>
+      </view>
+    </view>
+  </view> -->
+    <!--内容区域-->
+    <!-- <scroll-view class="recommendScroll" enable-flex scroll-x>
+      <view class="scrollItem">
+        <image src="/images/game pic.jpg"></image>
+        <text>游戏玩家|必备carry1全场</text>
+      </view>
+      <view class="scrollItem">
+        <image src="/images/dianyin pic.jpg"></image>
+        <text>电音狂欢节|欧美电音狂欢，节奏摇摆，即刻放飞自我</text>
+      </view>
+      <view class="scrollItem">
+        <image src="/images/gufen pic.jpg"></image>
+        <text>每日古风伤感犹存，一起感受一下古代的歌曲</text>
+      </view>
+      <view class="scrollItem">
+        <image src="/images/DJ pic.jpg"></image>
+        <text>下班回家的路上放一首车载DJ，毫无疲惫感</text>
+      </view>
+      <view class="scrollItem">
+        <image src="/images/discourage pic.jpg"></image>
+        <text>伤感人的话|世界这么大，你不想去看看嘛？别再伤感</text>
+      </view>
+    </scroll-view> -->
+ 
+  <view >
+    <view wx:for="{{hotAlbums}}">
+      <!-- <image src="{{item.picUrl}}"></image> -->
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+</view>
